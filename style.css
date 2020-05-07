@@ -11,3 +11,65 @@ li {
 li {
   list-style-type: none;
 }
+
+/* CSS Variables */
+:root {
+  --primary: #000;
+  --secondary: #0067ce;
+  --footer-primary: #777761;
+  --footer-secondary: #616161;
+}
+
+.container {
+  width: 100%;
+  min-width: 330px;
+}
+
+/* Nav-menu */
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-flex > div {
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-flex .burger-menu > div {
+  width: 25px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.nav-flex .logo {
+  background: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31")
+    no-repeat center center/contain;
+  width: 40%;
+  height: 25px;
+}
+
+/* Covid info Section */
+.covid-info {
+  padding: 14px 32px;
+  background-color: #0067b8;
+  text-align: center;
+}
+
+.covid-info:hover {
+  outline-style: dashed;
+}
+
+.covid-info a {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.covid-info a > i {
+  font-size: 12px;
+  margin-left: 5px;
+}
