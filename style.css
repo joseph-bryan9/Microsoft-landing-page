@@ -7,6 +7,8 @@ li {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 li {
   list-style-type: none;
@@ -60,16 +62,240 @@ li {
 }
 
 .covid-info:hover {
-  outline-style: dashed;
+  outline: #000 dashed 1px;
+  margin: 1px;
 }
 
 .covid-info a {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
 
 .covid-info a > i {
   font-size: 12px;
   margin-left: 5px;
+}
+
+/* Showcase Section */
+.showcase {
+  background: url("assets/showcase-xs.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 19vh;
+}
+
+.second-section {
+  background: #333;
+  padding: 60px 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  height: 19vh;
+}
+
+.second-section h1 {
+  font-size: 20px;
+}
+
+.second-section > div {
+  padding: 8px 20px;
+  padding-top: 0;
+  margin-top: 10px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+.second-section > div {
+  background: #fff;
+}
+
+.second-section > div:hover {
+  background: #e6e6e6;
+}
+
+.second-section > div > a {
+  color: var(--primary);
+  transition: all 20ms ease-in-out;
+}
+
+.second-section > div > a:hover {
+  border-bottom: 2px solid #000;
+  color: var(--primary);
+}
+
+.second-section > div > i {
+  font-size: 12px;
+  margin-left: 5px;
+  color: var(--primary);
+}
+
+.second-section > div > i:hover {
+  font-size: 12px;
+}
+
+/* Card Section */
+.card-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.card-section .cards {
+  width: 100%;
+  height: 165px;
+  display: block;
+}
+
+.card-section > div {
+  margin-bottom: 60px;
+}
+
+.card-section > div > h1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.card-section .chevron-link > a,
+i {
+  color: var(--secondary);
+  margin-top: 17px;
+}
+
+.card-section .chevron-link > a:hover {
+  border-bottom: 2px solid var(--secondary);
+}
+
+.card-section .chevron-link > i {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.card-section .cards .card-1 {
+  background: url("assets/cards-1.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-2 {
+  background: url("assets/cards-2.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-3 {
+  background: url("assets/cards-3.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-4 {
+  background: url("assets/cards-4.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-5 {
+  background: url("assets/cards-5.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-6 {
+  background: url("assets/cards-6.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-7 {
+  background: url("assets/cards-7.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-8 {
+  background: url("assets/cards-8.jpg") no-repeat center center/contain;
+  width: 100%;
+  height: 161px;
+}
+
+.card-section .cards .card-1:hover,
+.card-section .cards .card-2:hover,
+.card-section .cards .card-3:hover,
+.card-section .cards .card-4:hover,
+.card-section .cards .card-5:hover,
+.card-section .cards .card-6:hover,
+.card-section .cards .card-7:hover,
+.card-section .cards .card-8:hover {
+  opacity: 0.9;
+}
+
+/* Showcase-2 Section */
+.showcase-2 {
+  background: url("assets/showcase-2-xs.jpg") no-repeat center center/contain;
+  width: 324px;
+  height: 182px;
+}
+
+/* 4th Section */
+.fourth-section {
+  background: #e6e6e6;
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--primary);
+  font-size: 15px;
+  position: relative;
+  height: 18.5vh;
+}
+
+.fourth-section h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.fourth-section > div {
+  padding: 8px 20px;
+  padding-top: 0;
+  margin-top: 15px;
+  background: var(--primary);
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+.fourth-section > div:hover {
+  background: #1a1a1a;
+}
+
+.fourth-section > div > a {
+  color: #fff;
+  transition: all 20ms ease-in-out;
+  font-weight: 600;
+}
+
+.fourth-section > div > a:hover {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.fourth-section > div > i {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.fourth-section > div > i:hover {
+  font-size: 12px;
+}
+
+/* Card-2 Section */
+.card-2-section {
 }
