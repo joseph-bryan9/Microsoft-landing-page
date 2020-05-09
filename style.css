@@ -14,6 +14,10 @@ li {
   list-style-type: none;
 }
 
+i {
+  color: #000 !important;
+}
+
 /* CSS Variables */
 :root {
   --primary: #000;
@@ -25,6 +29,7 @@ li {
 .container {
   width: 100%;
   min-width: 330px;
+  /* height: auto; */
 }
 
 /* Nav-menu */
@@ -32,7 +37,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 5px;
 }
 
 .nav-flex > div {
@@ -40,11 +45,19 @@ li {
   margin: 0 auto;
 }
 
+.nav-flex > div > i {
+  margin-top: 0;
+}
+
 .nav-flex .burger-menu > div {
   width: 25px;
   height: 1px;
   background-color: black;
   margin: 6px 0;
+}
+
+.nav-flex .search-btn .fa-search {
+  transform: scaleX(-1);
 }
 
 .nav-flex .logo {
@@ -71,16 +84,26 @@ li {
   font-size: 13px;
 }
 
-.covid-info a > i {
+.covid-info a:hover {
+  text-decoration: underline;
+}
+
+.covid-info a > .fa-chevron-right {
   font-size: 12px;
   margin-left: 5px;
+  margin-top: 0;
+  color: #fff !important;
 }
 
 /* Showcase Section */
-.showcase {
-  background: url("assets/showcase-xs.jpg") no-repeat center center/cover;
+.showcase-container {
   width: 100%;
-  height: 19vh;
+  height: auto;
+}
+
+.showcase-container > img {
+  width: 100%;
+  height: auto;
 }
 
 .second-section {
@@ -141,13 +164,12 @@ li {
 .card-section {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 30px 20px 0;
 }
 
 .card-section .cards {
   width: 100%;
-  height: 165px;
-  display: block;
+  height: auto;
 }
 
 .card-section > div {
@@ -162,67 +184,63 @@ li {
   padding-bottom: 5px;
 }
 
-.card-section .chevron-link > a,
+.card-section div .chevron-link .fa-chevron-right {
+  color: var(--secondary) !important;
+}
+
+.card-section .chevron-link .chevron-a,
 i {
   color: var(--secondary);
   margin-top: 17px;
 }
 
-.card-section .chevron-link > a:hover {
+.card-section .chevron-link .chevron-a:hover {
   border-bottom: 2px solid var(--secondary);
 }
 
-.card-section .chevron-link > i {
+.card-section .chevron-link .chevron-i {
   font-size: 12px;
   margin-left: 5px;
 }
 
 .card-section .cards .card-1 {
-  background: url("assets/cards-1.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-2 {
-  background: url("assets/cards-2.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-3 {
-  background: url("assets/cards-3.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-4 {
-  background: url("assets/cards-4.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-5 {
-  background: url("assets/cards-5.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-6 {
-  background: url("assets/cards-6.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-7 {
-  background: url("assets/cards-7.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-8 {
-  background: url("assets/cards-8.jpg") no-repeat center center/contain;
   width: 100%;
-  height: 161px;
+  height: auto;
 }
 
 .card-section .cards .card-1:hover,
@@ -237,10 +255,14 @@ i {
 }
 
 /* Showcase-2 Section */
-.showcase-2 {
-  background: url("assets/showcase-2-xs.jpg") no-repeat center center/contain;
-  width: 324px;
-  height: 182px;
+.showcase-2-container {
+  width: 100%;
+  height: auto;
+}
+
+.showcase-2-container > img {
+  width: 100%;
+  height: auto;
 }
 
 /* 4th Section */
@@ -286,16 +308,130 @@ i {
   color: #fff;
 }
 
-.fourth-section > div > i {
+.fourth-section > div > .fa-chevron-right {
   font-size: 12px;
   margin-left: 5px;
-  color: #fff;
+  color: #fff !important;
 }
 
 .fourth-section > div > i:hover {
   font-size: 12px;
 }
 
-/* Card-2 Section */
-.card-2-section {
+/* Social Medias */
+.social-medias {
+  padding: 0 20px 30px;
+  position: relative;
 }
+
+.social-medias p {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.social-medias object {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.social-medias .fb-icon {
+  left: 140px;
+  bottom: 20px;
+}
+
+.social-medias .twitter-icon {
+  left: 190px;
+  bottom: 20px;
+}
+
+.social-medias .fb-icon:hover,
+.social-medias .fb-icon:focus,
+.social-medias .twitter-icon:hover,
+.social-medias .twitter-icon:focus {
+  filter: grayscale(40%);
+}
+
+/* Footer section */
+footer {
+  background: #f2f2f2;
+  padding: 30px 20px;
+  color: #616161;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+footer div h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+footer a {
+  margin-bottom: 14px;
+  font-size: 11px;
+  color: #616161;
+}
+
+footer a:hover {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: underline;
+}
+
+footer section .globe-country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer section .globe-country .globe {
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+footer section div .country-btn {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+footer section div .country-btn:hover {
+  color: #616161;
+}
+
+footer section .contact-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer section .contact-section a {
+  margin-right: 15px;
+}
+
+footer section .contact-section p {
+  font-size: 11px;
+}
+
+@media only screen and (min-width: 540px) {
+  .container {
+    padding: 10px 0;
+  }
+
+  .nav-flex .logo {
+    width: 20%;
+  }
+
+  .covid-info {
+    padding: 13px 32px;
+  }
+}
+
+/* @media only screen and (min-width: 768px) {
+  .showcase-container img {
+    background-image: url("assets/showcase.jpg");
+  }
+} */
