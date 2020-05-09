@@ -29,7 +29,6 @@ i {
 .container {
   width: 100%;
   min-width: 330px;
-  /* height: auto; */
 }
 
 /* Nav-menu */
@@ -96,11 +95,7 @@ i {
 }
 
 /* Showcase Section */
-.showcase-container {
-  width: 100%;
-  height: auto;
-}
-
+.showcase-container,
 .showcase-container > img {
   width: 100%;
   height: auto;
@@ -177,11 +172,19 @@ i {
 }
 
 .card-section > div > h1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 0;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+}
+
+.container .card-2-h1 {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding: 40px 20px 0;
 }
 
 .card-section div .chevron-link .fa-chevron-right {
@@ -255,11 +258,7 @@ i {
 }
 
 /* Showcase-2 Section */
-.showcase-2-container {
-  width: 100%;
-  height: auto;
-}
-
+.showcase-2-container,
 .showcase-2-container > img {
   width: 100%;
   height: auto;
@@ -428,10 +427,100 @@ footer section .contact-section p {
   .covid-info {
     padding: 13px 32px;
   }
+
+  .second-section {
+    padding: 100px 50px 30px;
+  }
+
+  .second-section > h1,
+  p {
+    margin-bottom: 7px;
+  }
+
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  .fourth-section {
+    padding: 88px 40px 40px;
+  }
+
+  .fourth-section > h1 {
+    margin-bottom: 7px;
+  }
+
+  .fourth-section > p {
+    margin-bottom: 1px;
+  }
+
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  .card-section > div > h1 {
+  }
+
+  .social-medias {
+    padding: 0 20px 60px;
+  }
+
+  .social-medias object {
+    width: 28px;
+    height: 28px;
+  }
+
+  .social-medias .fb-icon,
+  .social-medias .twitter-icon {
+    bottom: 60px;
+  }
+
+  .social-medias .twitter-icon {
+    left: 185px;
+  }
+
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  footer a {
+    margin-bottom: 20px;
+  }
+
+  footer .globe-country {
+    margin-bottom: 35px;
+  }
+
+  footer > section > .contact-section {
+    margin-bottom: 0;
+  }
 }
 
-/* @media only screen and (min-width: 768px) {
-  .showcase-container img {
-    background-image: url("assets/showcase.jpg");
+@media only screen and (min-width: 768px) {
+  .second-section {
+    background: transparent;
+    padding: 60px 50px;
+    position: absolute;
+    height: 19vh;
+    bottom: 400px;
+    left: 22%;
+    width: 45%;
   }
-} */
+
+  .card-section {
+    padding: 50px 38px 0;
+  }
+
+  .card-section .cards {
+    margin-bottom: 40px;
+  }
+
+  .container .card-2-h1 {
+    padding: 40px 38px 0;
+  }
+}
