@@ -337,6 +337,11 @@ i {
   font-size: 12px;
 }
 
+.showcase-2-container-hidden,
+.fourth-section-hidden {
+  display: none;
+}
+
 /* Social Medias */
 .social-medias {
   padding: 0 20px 30px;
@@ -548,24 +553,82 @@ footer section .contact-section p {
     padding: 40px 38px 0;
   }
 
-  .showcase-2-container > img {
-    position: relative;
+  .showcase-2-container {
+    display: none;
   }
 
   .fourth-section {
-    background: transparent;
-    padding: 60px 50px;
-    position: absolute;
-    height: 19vh;
-    /* bottom: -890px;
-    left: -10px; */
-    width: 45%;
-    text-align: left;
-    top: 50%;
+    display: none;
   }
 
-  .fourth-section > div {
+  .showcase-2-container-hidden {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden {
+    display: block;
+    background: transparent;
+    padding: 60px 50px;
+    height: 19vh;
+    width: 45%;
+    text-align: left;
+    top: 18%;
+    position: absolute;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > h1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > div {
+    /* left: 120px; */
+    /* padding: 8px 20px;
+    padding-top: 0;
+    margin-top: 15px;
+    background: var(--primary);
+    position: absolute;
+    display: block; */
     left: 120px;
+    background: var(--primary);
+    display: inline-block;
+    padding: 0 20px 10px;
+    /* margin-right: -50%; */
+    /* transform: translateX(-50%); */
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > div:hover {
+    background: #1a1a1a;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > p {
+    margin-bottom: 24px;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > div > a {
+    color: #fff;
+    transition: all 20ms ease-in-out;
+    font-weight: 600;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > div > a:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+
+  .showcase-2-container-hidden
+    .fourth-section-hidden
+    > div
+    > .fa-chevron-right {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #fff !important;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > div > i:hover {
+    font-size: 12px;
   }
 }
 
