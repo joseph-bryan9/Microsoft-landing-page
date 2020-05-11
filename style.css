@@ -703,7 +703,7 @@ footer section .contact-section p {
     background: #f2f2f2;
     min-width: 800px;
     z-index: 1;
-    left: 18px;
+    left: 23px;
     top: 55px;
   }
 
@@ -792,7 +792,92 @@ footer section .contact-section p {
 }
 
 @media only screen and (min-width: 1084px) {
-  .container {
-    /* padding: 10px 100px; */
+  .container > div {
+    margin: 0 4.5em;
+  }
+
+  .card-section {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 0 0;
+  }
+
+  .second-section {
+    height: 28vh;
+    left: 25%;
+  }
+
+  .container .card-2-h1 {
+    padding: 40px 0 0;
+  }
+
+  footer {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+  }
+
+  footer .footer-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container > div {
+    margin: 0 4.9em;
+  }
+
+  .second-section {
+    height: 28vh;
+    left: 25%;
+  }
+
+  .second-section h1 {
+    font-size: 46px;
+  }
+
+  .second-section > h1,
+  p {
+    margin-bottom: 10px;
+  }
+
+  .showcase-2-container-hidden .fourth-section-hidden > h1 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container > div {
+    margin: 0 5.2em;
+  }
+
+  .second-section {
+    height: 27vh;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container > div {
+    margin: 0 5.5em;
+  }
+
+  .second-section {
+    height: 26vh;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .container > div {
+    margin: 0 9em;
+  }
+
+  .second-section {
+    height: 17vh;
+    left: 23%;
+    width: 49%;
   }
 }
