@@ -96,6 +96,7 @@ i {
 .covid-info:hover {
   outline: #000 dashed 1px;
   margin: 1px;
+  cursor: pointer;
 }
 
 .covid-info a {
@@ -277,6 +278,11 @@ i {
   opacity: 0.9;
 }
 
+.card-section > div:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 /* Showcase-2 Section */
 .showcase-2-container,
 .showcase-2-container > img {
@@ -444,6 +450,13 @@ footer section .contact-section p {
   font-size: 11px;
 }
 
+@media only screen and (min-width: 353px) {
+  .card-section .chevron-link {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
 @media only screen and (min-width: 540px) {
   .container {
     padding: 10px 0 0;
@@ -530,6 +543,19 @@ footer section .contact-section p {
   }
 }
 
+@media only screen and (min-width: 636px) {
+  .card-section .chevron-link {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 712px) {
+  .card-section .chevron-link {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 10px 0 0;
@@ -543,6 +569,11 @@ footer section .contact-section p {
     bottom: 400px;
     left: 22%;
     width: 45%;
+  }
+
+  .showcase-container-hidden,
+  .showcase-2-container-hidden {
+    cursor: pointer;
   }
 
   .card-section {
@@ -865,6 +896,12 @@ footer section .contact-section p {
   }
 }
 
+@media only screen and (min-width: 1335px) {
+  .card-section .chevron-link {
+    display: block;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .container > div {
     margin: 0 4.9em;
@@ -884,10 +921,21 @@ footer section .contact-section p {
     margin-bottom: 13px;
   }
 
+  .showcase-2-container-hidden .fourth-section-hidden {
+    padding-left: 100px;
+  }
+
   .showcase-2-container-hidden .fourth-section-hidden > h1 {
     font-size: 46px;
     font-weight: 400;
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1433px) {
+  .card-section .chevron-link {
+    display: inline-block;
+    margin-right: 20px;
   }
 }
 
@@ -926,5 +974,15 @@ footer section .contact-section p {
     font-size: 46px;
     font-weight: 400;
     margin-bottom: 20px;
+  }
+
+  footer {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+  footer .footer-grid {
+    margin-right: 2em;
+    margin-bottom: 0;
   }
 }
