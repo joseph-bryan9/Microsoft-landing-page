@@ -37,13 +37,13 @@ i {
 .nav-flex-2 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 5px;
 }
 
 .nav-flex > div {
   display: block;
-  margin: 0 auto;
 }
 
 .nav-flex > div > i {
@@ -60,6 +60,24 @@ i {
 .nav-flex .search-btn .fa-search,
 .nav-flex-2 .search-btn .fa-search {
   transform: scaleX(-1);
+}
+
+.nav-flex .logo {
+  width: 20%;
+  flex-grow: 2;
+}
+
+.nav-flex .burger-menu,
+.nav-flex .cart-btn {
+  margin-right: 20px;
+}
+
+.nav-flex .burger-menu {
+  margin-left: 10px;
+}
+
+.nav-flex .user-btn {
+  margin-right: 10px;
 }
 
 .nav-flex .logo,
@@ -464,6 +482,20 @@ footer section .contact-section p {
 
   .nav-flex .logo {
     width: 20%;
+    flex-grow: 2;
+  }
+
+  .nav-flex .burger-menu,
+  .nav-flex .cart-btn {
+    margin-right: 30px;
+  }
+
+  .nav-flex .burger-menu {
+    margin-left: 15px;
+  }
+
+  .nav-flex .user-btn {
+    margin-right: 15px;
   }
 
   .covid-info {
@@ -724,7 +756,8 @@ footer section .contact-section p {
   }
 
   .nav-flex-2 .logo {
-    width: 20%;
+    width: 130px;
+    margin-right: 20px;
   }
 
   .nav-flex-2 .nav-menu-list {
@@ -747,7 +780,12 @@ footer section .contact-section p {
   .nav-flex-2 .search-btn,
   .nav-flex-2 .cart-btn,
   .nav-flex-2 .user-btn {
-    flex-grow: 1;
+    text-align: right;
+    margin-right: 30px;
+  }
+
+  .nav-flex-2 .user-btn {
+    margin-right: 10px;
   }
 
   .nav-flex-2 .search-btn,
