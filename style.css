@@ -44,6 +44,7 @@ i {
 
 .nav-flex > div {
   display: block;
+  cursor: pointer;
 }
 
 .nav-flex > div > i {
@@ -65,6 +66,7 @@ i {
 .nav-flex .logo {
   width: 20%;
   flex-grow: 2;
+  cursor: pointer;
 }
 
 .nav-flex .burger-menu,
@@ -91,6 +93,7 @@ i {
 /* Nav-menu 2, drop down hidden by default */
 .nav-flex-2 {
   display: none;
+  cursor: pointer;
 }
 
 .nav-flex-2 .nav-menu-list a {
@@ -106,15 +109,19 @@ i {
 
 /* Covid info Section */
 .covid-info {
-  padding: 14px 32px;
+  padding: 12px 36px;
   background-color: #0067b8;
   text-align: center;
+  display: block;
 }
 
 .covid-info:hover {
-  outline: #000 dashed 1px;
-  margin: 1px;
+  text-decoration: underline;
   cursor: pointer;
+  outline: 1px dashed #000;
+  color: #fff;
+  padding: 11px 35px;
+  margin: 1px;
 }
 
 .covid-info a {
@@ -122,18 +129,19 @@ i {
   font-size: 13px;
 }
 
-.covid-info a:hover {
-  text-decoration: underline;
-}
-
 .covid-info a > .fa-chevron-right {
   font-size: 12px;
   margin-left: 5px;
   margin-top: 0;
   color: #fff !important;
+  transition: all 200ms ease-in-out;
 }
 
 /* Showcase Section */
+.showcase-container {
+  cursor: pointer;
+}
+
 .showcase-container,
 .showcase-container > img {
   width: 100%;
@@ -148,6 +156,7 @@ i {
   font-size: 15px;
   position: relative;
   height: 19vh;
+  cursor: pointer;
 }
 
 .second-section h1 {
@@ -302,6 +311,10 @@ i {
 }
 
 /* Showcase-2 Section */
+.showcase-2-container {
+  cursor: pointer;
+}
+
 .showcase-2-container,
 .showcase-2-container > img {
   width: 100%;
@@ -317,6 +330,7 @@ i {
   font-size: 15px;
   position: relative;
   height: 18.5vh;
+  cursor: pointer;
 }
 
 .fourth-section h1 {
@@ -390,11 +404,13 @@ i {
 .social-medias .fb-icon {
   left: 140px;
   bottom: 20px;
+  cursor: pointer;
 }
 
 .social-medias .twitter-icon {
   left: 190px;
   bottom: 20px;
+  cursor: pointer;
 }
 
 .social-medias .fb-icon:hover,
@@ -496,10 +512,6 @@ footer section .contact-section p {
 
   .nav-flex .user-btn {
     margin-right: 15px;
-  }
-
-  .covid-info {
-    padding: 13px 32px;
   }
 
   .second-section {
@@ -774,13 +786,14 @@ footer section .contact-section p {
 
   .nav-flex-2 .nav-menu-list > a:hover {
     border-bottom: 2px solid #000;
+    margin: 14px 6px 8px;
   }
 
   .nav-flex-2 .dropdown,
   .nav-flex-2 .search-btn,
   .nav-flex-2 .cart-btn,
   .nav-flex-2 .user-btn {
-    text-align: right;
+    /* text-align: right; */
     margin-right: 30px;
   }
 
@@ -816,8 +829,10 @@ footer section .contact-section p {
     background: #f2f2f2;
     min-width: 800px;
     z-index: 1;
-    left: 23px;
+    left: auto;
     top: 55px;
+    right: 20px;
+    width: 95%;
   }
 
   .nav-flex-2 .dropdown .dropdown-content .grid-dropdown {
@@ -908,6 +923,12 @@ footer section .contact-section p {
     margin: 0 4.5em;
   }
 
+  .nav-flex-2 .dropdown:hover .dropdown-content {
+    left: auto;
+    right: 30px;
+    width: 94%;
+  }
+
   .card-section {
     grid-template-columns: repeat(4, 1fr);
     padding: 50px 0 0;
@@ -934,6 +955,13 @@ footer section .contact-section p {
   }
 }
 
+@media only screen and (min-width: 1230px) {
+  .nav-flex-2 .dropdown .dropdown-content .grid-dropdown {
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 10px;
+  }
+}
+
 @media only screen and (min-width: 1335px) {
   .card-section .chevron-link {
     display: block;
@@ -943,6 +971,18 @@ footer section .contact-section p {
 @media only screen and (min-width: 1400px) {
   .container > div {
     margin: 0 4.9em;
+  }
+
+  .nav-flex-2 .search-btn::before {
+    content: "Search ";
+  }
+
+  .nav-flex-2 .cart-btn::before {
+    content: "Cart ";
+  }
+
+  .nav-flex-2 .user-btn::before {
+    content: "Sign in ";
   }
 
   .showcase-container-hidden .second-section-hidden {
@@ -981,6 +1021,12 @@ footer section .contact-section p {
   .container > div {
     margin: 0 5.2em;
   }
+
+  .nav-flex-2 .dropdown:hover .dropdown-content {
+    left: auto;
+    right: 30px;
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -992,6 +1038,12 @@ footer section .contact-section p {
 @media only screen and (min-width: 1650px) {
   .container > div {
     margin: 0 9em;
+  }
+
+  .nav-flex-2 .dropdown:hover .dropdown-content {
+    left: auto;
+    right: 165px;
+    width: 64%;
   }
 
   .showcase-container-hidden .second-section-hidden {
