@@ -26,6 +26,10 @@ i {
   --footer-secondary: #616161;
 }
 
+.show {
+  display: block;
+}
+
 .container {
   width: 100%;
   min-width: 330px;
@@ -751,6 +755,7 @@ footer section .contact-section p {
   }
 }
 
+/* yung meron */
 @media only screen and (min-width: 860px) {
   .container {
     padding: 10px 0 0;
@@ -823,8 +828,12 @@ footer section .contact-section p {
     border-bottom: 2px solid #000;
   }
 
-  .nav-flex-2 .dropdown:hover .dropdown-content {
+  .show {
     display: block;
+  }
+
+  .nav-flex-2 .dropdown .dropdown-content {
+    display: none;
     position: absolute;
     background: #f2f2f2;
     min-width: 800px;
@@ -918,12 +927,13 @@ footer section .contact-section p {
   }
 }
 
+/* yung meron */
 @media only screen and (min-width: 1084px) {
   .container > div {
     margin: 0 4.5em;
   }
 
-  .nav-flex-2 .dropdown:hover .dropdown-content {
+  .nav-flex-2 .dropdown .dropdown-content {
     left: auto;
     right: 30px;
     width: 94%;
@@ -1017,12 +1027,13 @@ footer section .contact-section p {
   }
 }
 
+/* yung meron */
 @media only screen and (min-width: 1500px) {
   .container > div {
     margin: 0 5.2em;
   }
 
-  .nav-flex-2 .dropdown:hover .dropdown-content {
+  .nav-flex-2 .dropdown .dropdown-content {
     left: auto;
     right: 30px;
     width: 80%;
@@ -1035,12 +1046,13 @@ footer section .contact-section p {
   }
 }
 
+/* yung meron */
 @media only screen and (min-width: 1650px) {
   .container > div {
     margin: 0 9em;
   }
 
-  .nav-flex-2 .dropdown:hover .dropdown-content {
+  .nav-flex-2 .dropdown .dropdown-content {
     left: auto;
     right: 165px;
     width: 64%;
