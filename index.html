@@ -13,17 +13,33 @@
     <div class="container">
       <div>
       <!-- Nav-menu -->
+      <div class="nav-flex-hidden">
       <nav class="nav-flex">
         <div class="burger-menu" onclick="showNavigationMenu()">
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="search-btn" onclick="location.href='#';"><i class="fas fa-search fa-lg"></i></div>
+        <div class="search-btn" onclick="showSearchFilled()"><i class="fas fa-search fa-lg"></i></div>
         <div class="logo" onclick="location.href='#';"></div>
         <div class="cart-btn" onclick="location.href='#';"><i class="fas fa-shopping-cart fa-sm"></i></div>
         <div class="user-btn" onclick="location.href='#';"><i class="fas fa-user fa-lg"></i></div>
       </nav>
+    </div>
+
+      <!-- Search filled hidden by default -->
+      <div class="search-filled-hidden">
+      <div class="search-filled-flex">
+        <div id="back" onclick="back()"><i class="fas fa-arrow-left"></i></div>
+        <form class="search-filled" action="#">
+          <button class="search-btn" type="submit">
+            <i class="fa fa-search fa-lg"></i>
+          </button>
+          <input type="text" placeholder="Search Microsoft.com" name="search" onclick="inputHighlight()"/>
+        </form>
+      </div>
+    </div>
+
       <!-- Nav-menu 2 -->
       <nav class="nav-flex-2" onclick="location.href='#';">
         <div class="logo" onclick="location.href='#';"></div>

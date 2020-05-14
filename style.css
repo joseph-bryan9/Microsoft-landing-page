@@ -98,6 +98,69 @@ i {
   height: 25px;
 }
 
+/* Search filled hidden by default */
+.search-filled-hidden {
+  display: none;
+}
+
+.search-filled-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 5px;
+}
+
+.search-filled-flex div:first-child {
+  padding-left: 12px;
+  padding-right: 22px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.search-filled-flex .fa-arrow-left {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.search-filled {
+  padding: 2px;
+  margin-bottom: 0;
+  border: 1px solid #000;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-filled:focus {
+  border: 2px solid #000;
+}
+
+.search-filled-flex .search-filled > button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding-left: 6px;
+  display: inline;
+}
+
+.search-filled-flex .search-filled > button .fa-search {
+  margin-top: 0;
+  transform: scaleX(-1);
+}
+
+.search-filled-flex .search-filled > input {
+  margin: 0;
+  border: 0;
+  padding: 6px;
+  /* width: 95%; */
+  display: inline;
+  flex-grow: 1;
+}
+
+.search-filled-flex .search-filled > input:focus > .search-filled {
+  border: 2px solid #000;
+}
+
 /* Nav-menu 2, drop down hidden by default */
 .nav-flex-2 {
   display: none;
@@ -108,6 +171,10 @@ i {
   float: left;
   display: block;
   text-align: center;
+  font-size: 13px;
+}
+
+.nav-flex-2 .dropdown > .showNavmenu {
   font-size: 13px;
 }
 
@@ -220,6 +287,11 @@ span {
   margin-top: 0;
   color: #fff !important;
   transition: all 200ms ease-in-out;
+  right: 0;
+}
+
+.covid-info:hover > a > .fa-chevron-right {
+  padding-left: 20px;
 }
 
 /* Showcase Section */
@@ -845,6 +917,10 @@ footer section .contact-section p {
     display: none;
   }
 
+  .search-filled-hidden {
+    display: none !important;
+  }
+
   .nav-flex-2 {
     display: block;
     display: flex;
@@ -1066,6 +1142,11 @@ footer section .contact-section p {
 
   .nav-flex-2 .search-btn::before {
     content: "Search ";
+  }
+
+  .nav-flex-2 .search-btn:hover::before,
+  .nav-flex-2 .cart-btn:hover::before {
+    border-bottom: 2px solid #000;
   }
 
   .nav-flex-2 .cart-btn::before {

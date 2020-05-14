@@ -1,16 +1,8 @@
-function showNavmenu() {
-  var x = document.querySelector(".dropdown-content");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
 // Global Variables
 chevronDown.classList.add("fa-chevron-up");
 chevronDown.classList.remove("fa-chevron-up");
 
+// Nav-menu for Mobile & Small Tablet Screens
 function showNavigationMenu() {
   var navMenuMobileHidden = document.querySelector(".nav-menu-mobile-hidden");
 
@@ -147,5 +139,62 @@ function showOther() {
     dropdownContent.style.display = "none";
     chevronDown.classList.remove("fa-chevron-up");
     chevronDown.classList.toggle("fa-chevron-down");
+  }
+}
+
+// Nav-menu for Laptop & Desktop Screens
+function showNavmenu() {
+  var allMicrosoftContent = document.querySelector(".dropdown-content");
+  if (
+    !allMicrosoftContent.style.display ||
+    allMicrosoftContent.style.display == "none"
+  ) {
+    allMicrosoftContent.style.display = "block";
+  } else {
+    allMicrosoftContent.style.display = "none";
+  }
+}
+
+// Search-filled
+function showSearchFilled() {
+  var searchFilled = document.querySelector(".search-filled-hidden");
+  var navFlexHidden = document.querySelector(".nav-flex-hidden");
+  var navMenuMobileHidden = document.querySelector(".nav-menu-mobile-hidden");
+
+  if (!searchFilled.style.display || searchFilled.style.display == "none") {
+    navFlexHidden.style.display = "none";
+    navMenuMobileHidden.style.display = "none";
+    searchFilled.style.display = "block";
+  } else {
+    searchFilled.style.display = "none";
+    navFlexHidden.style.display = "block";
+  }
+}
+
+// Search-filled Back button
+function back() {
+  var navFlexHidden = document.querySelector(".nav-flex-hidden");
+  var searchFilled = document.querySelector(".search-filled-hidden");
+  var formBorder = document.querySelector(".search-filled");
+
+  if (!navFlexHidden.style.display || navFlexHidden.style.display == "none") {
+    searchFilled.style.display = "none";
+    formBorder.style.border = "1px solid rgb(0, 0, 0)";
+    navFlexHidden.style.display = "block";
+  } else {
+  }
+}
+
+// Highlight input when click
+function inputHighlight() {
+  var formBorder = document.querySelector(".search-filled");
+
+  if (
+    !formBorder.style.border ||
+    formBorder.style.border == "1px solid rgb(0, 0, 0)"
+  ) {
+    formBorder.style.border = "2px solid rgb(0, 0, 0)";
+  } else {
+    formBorder.style.border = "1px solid rgb(0, 0, 0)";
   }
 }
