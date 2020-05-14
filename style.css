@@ -37,6 +37,10 @@ i {
 }
 
 /* Nav-menu */
+.nav-flex {
+  position: relative;
+}
+
 .nav-flex,
 .nav-flex-2 {
   display: flex;
@@ -109,6 +113,83 @@ i {
 
 .nav-flex-2 .dropdown-content {
   display: none;
+}
+
+/* Nav-menu mobile content (Hamburger button)*/
+.nav-menu-mobile-hidden {
+  display: none;
+}
+
+.nav-menu-mobile {
+  background: #f2f2f2;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-menu-mobile a,
+span {
+  text-decoration: none;
+  color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 1px;
+}
+
+.nav-menu-mobile .fa-chevron-down,
+.fa-chevron-up {
+  font-size: 12px;
+}
+
+.nav-menu-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu-mobile > div {
+  padding: 16px 13px;
+  border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+.nav-menu-mobile > div:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.nav-menu-mobile > div > a:last-child {
+  text-transform: capitalize;
+}
+
+.nav-menu-mobile .dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-menu-mobile .dropdown-content-default-hidden,
+.dropdown-content {
+  display: none;
+}
+
+.nav-menu-mobile .dropdown-content-default-hidden {
+  padding: 0 !important;
+}
+
+.nav-menu-mobile .dropdown-content-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu-mobile .dropdown-content-flex > a {
+  margin-left: 30px;
+  padding: 16px 13px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-menu-mobile .dropdown-content-flex > a:last-child {
+  margin-left: 30px;
+  padding: 16px 13px;
+  border-bottom: none;
 }
 
 /* Covid info Section */
@@ -755,7 +836,7 @@ footer section .contact-section p {
   }
 }
 
-/* yung meron */
+/* With hidden nav-menu content adjustment checkpoint */
 @media only screen and (min-width: 860px) {
   .container {
     padding: 10px 0 0;
@@ -927,7 +1008,7 @@ footer section .contact-section p {
   }
 }
 
-/* yung meron */
+/* With hidden nav-menu content adjustment checkpoint */
 @media only screen and (min-width: 1084px) {
   .container > div {
     margin: 0 4.5em;
@@ -1027,7 +1108,7 @@ footer section .contact-section p {
   }
 }
 
-/* yung meron */
+/* With hidden nav-menu content adjustment checkpoint */
 @media only screen and (min-width: 1500px) {
   .container > div {
     margin: 0 5.2em;
@@ -1046,7 +1127,7 @@ footer section .contact-section p {
   }
 }
 
-/* yung meron */
+/* With hidden nav-menu content adjustment checkpoint */
 @media only screen and (min-width: 1650px) {
   .container > div {
     margin: 0 9em;

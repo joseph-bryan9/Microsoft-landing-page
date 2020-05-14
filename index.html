@@ -14,7 +14,7 @@
       <div>
       <!-- Nav-menu -->
       <nav class="nav-flex">
-        <div class="burger-menu" onclick="location.href='#';">
+        <div class="burger-menu" onclick="showNavigationMenu()">
           <div></div>
           <div></div>
           <div></div>
@@ -97,6 +97,129 @@
         <div class="user-btn" onclick="location.href='#';"><i class="fas fa-user fa-lg"></i></div>
       </nav>
       <!-- End of Nav-menu 2 -->
+
+      <!-- Nav-menu mobile -->
+      <div class="nav-menu-mobile-hidden">
+        <div class="nav-menu-mobile">
+          <div><a href="#">Microsoft 365</a></div>
+          <div><a href="#">Office</a></div>
+          <div><a href="#">Windows</a></div>
+          <div><a href="#">Xbox</a></div>
+          <div><a href="#">Support</a></div>
+          <!-- 1st dropdown -->
+          <div onclick="showSoftware()">
+            <div class="dropdown">
+              <span class="dropbtn">Software</span>
+              <i id="chevron-1" class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!-- 1st dropdown content -->
+          <div id="dropdown-1" class="dropdown-content-default-hidden">
+            <div id="dropdown-content-1" class="dropdown-content">
+              <div class="dropdown-content-flex">
+                <a href="#">Windows Apps</a>
+                <a href="#">OneDrive</a>
+                <a href="#">Outlook</a>
+                <a href="#">Skype</a>
+                <a href="#">OneNote</a>
+                <a href="#">Microsoft Teams</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd dropdown -->
+          <div onclick="showPCsDevices()">
+            <div class="dropdown">
+              <span onclick="myFunction()" class="dropbtn">PCs & Devices</span>
+              <i id="chevron-2" class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!-- 2nd dropdown content-->
+          <div id="dropdown-2" class="dropdown-content-default-hidden">
+            <div id="dropdown-content-2" class="dropdown-content">
+              <div class="dropdown-content-flex">
+                <a href="#">Shop Xbox</a>
+                <a href="#">PCs & tablets</a>
+                <a href="#">Accessories</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd dropdown -->
+          <div onclick="showEntertainment()">
+            <div class="dropdown">
+              <span onclick="myFunction()" class="dropbtn">Entertainment</span>
+              <i id="chevron-3" class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!-- 3rd dropdown content -->
+          <div id="dropdown-3" class="dropdown-content-default-hidden">
+            <div id="dropdown-content-3" class="dropdown-content">
+              <div class="dropdown-content-flex">
+                <a href="#">Xbox games</a>
+                <a href="#">PC games</a>
+                <a href="#">Windows digital games</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4th dropdown -->
+          <div onclick="showBusiness()">
+            <div class="dropdown">
+              <span onclick="myFunction()" class="dropbtn">Business</span>
+              <i id="chevron-4" class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!-- 4th dropdown content -->
+          <div id="dropdown-4" class="dropdown-content-default-hidden">
+            <div id="dropdown-content-4" class="dropdown-content">
+              <div class="dropdown-content-flex">
+                <a href="#">Microsoft Azure</a>
+                <a href="#">Microsoft Dynamics 365</a>
+                <a href="#">Microsoft 365</a>
+                <a href="#">Microsoft Industry</a>
+                <a href="#">Data platform</a>
+                <a href="#">Microsoft Advertising</a>
+                <a href="#">Licensing</a>
+              </div>
+            </div>
+          </div>
+          <!-- 5th dropdown -->
+          <div onclick="showDeveloperIT()">
+            <div class="dropdown">
+              <span onclick="myFunction()" class="dropbtn">Developer & IT</span>
+              <i id="chevron-5" class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!-- 5th dropdown content -->
+          <div id="dropdown-5" class="dropdown-content-default-hidden">
+            <div id="dropdown-content-5" class="dropdown-content">
+              <div class="dropdown-content-flex">
+                <a href="#">.NET</a>
+                <a href="#">Visual Studio</a>
+                <a href="#">Windows Server</a>
+                <a href="#">Windows Dev Center</a>
+                <a href="#">Docs</a>
+              </div>
+            </div>
+          </div>
+          <!-- 6th dropdown -->
+          <div onclick="showOther()">
+            <div class="dropdown">
+              <span onclick="myFunction()" class="dropbtn">Other</span>
+              <i id="chevron-6" class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!-- 6th dropdown content -->
+          <div id="dropdown-6" class="dropdown-content-default-hidden">
+            <div id="dropdown-content-6" class="dropdown-content">
+              <div class="dropdown-content-flex">
+                <a href="#">Free downloads & security</a>
+                <a href="#">Education</a>
+              </div>
+            </div>
+          </div>
+          <div><a href="#">view sitemap</a></div>
+        </div>
+      </div>
+      <!-- End of Nav-menu mobile -->
 
       <!-- Covid Info Section -->
       <section class="covid-info">
