@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
   </head>
   <body>
     <div class="container">
@@ -20,10 +21,13 @@
           <div></div>
           <div></div>
         </div>
-        <div class="search-btn" onclick="showSearchFilled()"><i class="fas fa-search fa-lg"></i></div>
+        <div class="close" onclick="closeNavigationMenu()">
+          <i class="ms-Icon ms-font-lg ms-Icon--ChromeClose"></i>
+        </div>
+        <div class="search-btn" onclick="showSearchFilled()"><i class="ms-Icon ms-font-xl ms-Icon--Search"></i></div>
         <div class="logo" onclick="location.href='#';"></div>
-        <div class="cart-btn" onclick="location.href='#';"><i class="fas fa-shopping-cart fa-sm"></i></div>
-        <div class="user-btn" onclick="location.href='#';"><i class="fas fa-user fa-lg"></i></div>
+        <div class="cart-btn" onclick="location.href='#';"><i class="ms-Icon ms-font-xl ms-Icon--ShoppingCart"></i></div>
+        <div class="user-btn" onclick="location.href='#';"><i class="ms-Icon ms-font-xl ms-Icon--AddFriend"></i></div>
       </nav>
     </div>
 
@@ -33,7 +37,7 @@
         <div id="back" onclick="back()"><i class="fas fa-arrow-left"></i></div>
         <form class="search-filled" action="#">
           <button class="search-btn" type="submit">
-            <i class="fa fa-search fa-lg"></i>
+            <i class="ms-Icon ms-font-xl ms-Icon--Search"></i>
           </button>
           <input type="text" placeholder="Search Microsoft.com" name="search" onclick="inputHighlight()"/>
         </form>
@@ -41,6 +45,7 @@
     </div>
 
       <!-- Nav-menu 2 -->
+      <div class="nav-flex-2-hidden">
       <nav class="nav-flex-2" onclick="location.href='#';">
         <div class="logo" onclick="location.href='#';"></div>
         <div class="nav-menu-list" id="myTopnav">
@@ -108,11 +113,26 @@
             </div>
           </div>
         </div> 
-        <div class="search-btn" onclick="location.href='#';"><i class="fas fa-search fa-lg"></i></div>
-        <div class="cart-btn" onclick="location.href='#';"><i class="fas fa-shopping-cart fa-sm"></i></div>
-        <div class="user-btn" onclick="location.href='#';"><i class="fas fa-user fa-lg"></i></div>
+        <div class="search-btn" onclick="showSearchFilledz()"><i class="ms-Icon ms-font-xl ms-Icon--Search"></i></div>
+        <div class="cart-btn" onclick="location.href='#';"><i class="ms-Icon ms-font-xl ms-Icon--ShoppingCart"></i></div>
+        <div class="user-btn" onclick="location.href='#';"><i class="ms-Icon ms-font-xl ms-Icon--AddFriend"></i></div>
       </nav>
+      </div>
       <!-- End of Nav-menu 2 -->
+
+      <!-- Search filled-2 hidden by default -->
+      <div class="search-filled-2-hidden">
+      <nav class="nav-flex-2">
+        <div class="logo" onclick="location.href='#';"></div>
+        <form class="search-filled" action="#">
+          <input type="text" placeholder="Search Microsoft.com" name="search" onclick="inputHighlight()"/>
+          <button class="search-btn" type="submit">
+            <i class="ms-Icon ms-font-xl ms-Icon--Search"></i>
+          </button>
+        </form>
+        <div id="back" onclick="cancel()"><span>Cancel</span></div>
+      </nav>
+    </div>
 
       <!-- Nav-menu mobile -->
       <div class="nav-menu-mobile-hidden">
@@ -409,7 +429,6 @@
         <p>Follow Microsoft</p>
         <object class="fb-icon" data="assets/facebook.svg" type="image/svg+xml"></object>
         <object class="twitter-icon"  data="assets/twitter.svg" type="image/svg+xml"></object>
-        <i></i>
       </div>
 
     </div>
@@ -459,7 +478,7 @@
       </div>
 
         <section>
-          <div class="globe-country"><i class="fa fa-globe fa-lg globe" aria-hidden="true"></i><a href="#" class="country-btn">English (Philippines)</a></div>
+          <div class="globe-country"><i class="ms-Icon ms-font-xl ms-Icon--World" aria-hidden="true"></i><a href="#" class="country-btn">English (Philippines)</a></div>
 
           <div class="contact-section">
             <a href="#">Contact Microsoft</a>
