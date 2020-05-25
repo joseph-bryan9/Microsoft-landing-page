@@ -96,6 +96,14 @@ i {
   margin-right: 10px;
 }
 
+.nav-flex .user-btn > i {
+  border: 1px solid #000;
+  padding: 4px;
+  padding-left: 4px;
+  padding-left: 8px;
+  border-radius: 20px;
+}
+
 .nav-flex .logo,
 .nav-flex-2 .logo {
   background: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31")
@@ -678,8 +686,7 @@ footer section .globe-country {
   align-items: center;
 }
 
-footer section .globe-country .globe {
-  margin-top: 0;
+footer section .globe-country > i {
   margin-right: 10px;
 }
 
@@ -767,9 +774,6 @@ footer section .contact-section p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
-  }
-
-  .card-section > div > h1 {
   }
 
   .social-medias {
@@ -1034,11 +1038,12 @@ footer section .contact-section p {
     margin: 16px 8px 10px;
     padding-bottom: 3px;
     transition: all 20ms ease-in-out;
+    border-bottom: 2px solid transparent;
   }
 
   .nav-flex-2 .nav-menu-list > a:hover {
     border-bottom: 2px solid #000;
-    margin: 14px 6px 8px;
+    margin: 16px 8px 10px;
   }
 
   .nav-flex-2 .dropdown,
@@ -1051,6 +1056,14 @@ footer section .contact-section p {
 
   .nav-flex-2 .user-btn {
     margin-right: 10px;
+  }
+
+  .nav-flex-2 .user-btn > i {
+    border: 1px solid #000;
+    padding: 4px;
+    padding-left: 4px;
+    padding-left: 8px;
+    border-radius: 20px;
   }
 
   .nav-flex-2 .search-btn,
@@ -1159,6 +1172,16 @@ footer section .contact-section p {
     display: inline-block;
   }
 
+  footer section .globe-country > i {
+    margin-right: 10px;
+    position: relative;
+  }
+
+  footer section .globe-country > a {
+    position: absolute;
+    margin-top: 4px;
+  }
+
   footer section .contact-section,
   p {
     margin-left: auto;
@@ -1232,6 +1255,8 @@ footer section .contact-section p {
 
   .nav-flex-2 .search-btn::before {
     content: "Search ";
+    vertical-align: super;
+    font-size: 13px;
   }
 
   .nav-flex-2 .search-btn:hover::before,
@@ -1241,10 +1266,14 @@ footer section .contact-section p {
 
   .nav-flex-2 .cart-btn::before {
     content: "Cart ";
+    vertical-align: super;
+    font-size: 13px;
   }
 
   .nav-flex-2 .user-btn::before {
     content: "Sign in ";
+    vertical-align: super;
+    font-size: 13px;
   }
 
   .search-filled-2-hidden .nav-flex-2 .search-btn::before {
