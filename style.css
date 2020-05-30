@@ -98,10 +98,10 @@ i {
 
 .nav-flex .user-btn > i {
   border: 1px solid #000;
-  padding: 4px;
+  padding: 3px;
   padding-right: 3px;
   padding-left: 7px;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .nav-flex .logo,
@@ -1065,10 +1065,10 @@ footer section .contact-section p {
 
   .nav-flex-2 .user-btn > i {
     border: 1px solid #000;
-    padding: 4px;
+    padding: 3px;
     padding-right: 3px;
     padding-left: 7px;
-    border-radius: 15px;
+    border-radius: 50%;
   }
 
   .nav-flex-2 .search-btn,
