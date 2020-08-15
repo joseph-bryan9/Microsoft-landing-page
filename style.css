@@ -365,7 +365,7 @@ span {
   color: #fff;
   font-size: 15px;
   position: relative;
-  height: 19vh;
+  height: auto;
   cursor: pointer;
 }
 
@@ -621,26 +621,28 @@ i {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.social-medias object {
-  width: 32px;
-  height: 32px;
+.social-medias > a {
   position: absolute;
-}
-
-.social-medias > svg {
-  cursor: pointer;
 }
 
 .social-medias .fb-icon {
   left: 140px;
   bottom: 20px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  background: url("assets/facebook.svg");
+  background-size: contain;
 }
 
 .social-medias .twitter-icon {
   left: 190px;
   bottom: 20px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  background: url("assets/twitter.svg");
+  background-size: contain;
 }
 
 .social-medias .fb-icon:hover,
@@ -744,7 +746,7 @@ footer section .contact-section p {
   }
 
   .second-section {
-    padding: 100px 50px 30px;
+    padding: 100px 50px;
   }
 
   .second-section > h1,
@@ -881,16 +883,16 @@ footer section .contact-section p {
   }
 
   .showcase-container-hidden .second-section-hidden {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: transparent;
     color: #fff;
-    padding: 60px 50px;
-    height: 19vh;
-    width: 46%;
     text-align: center;
-    top: 30%;
-    left: 20%;
     position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
   }
 
   .showcase-container-hidden .second-section-hidden > div > .fa-chevron-right {
@@ -940,11 +942,9 @@ footer section .contact-section p {
     padding-top: 0;
     margin-top: 10px;
     background: #fff;
-    position: absolute;
+    width: 100px;
     display: block;
-    left: 50%;
-    margin-right: -50%;
-    transform: translateX(-50%);
+    margin: 15px auto;
   }
 
   .showcase-container-hidden .second-section-hidden > div:hover {
@@ -1055,7 +1055,6 @@ footer section .contact-section p {
   .nav-flex-2 .search-btn,
   .nav-flex-2 .cart-btn,
   .nav-flex-2 .user-btn {
-    /* text-align: right; */
     margin-right: 30px;
   }
 
@@ -1159,8 +1158,10 @@ footer section .contact-section p {
     color: rgba(0, 0, 0, 0.8);
   }
 
-  .showcase-container-hidden .second-section-hidden {
-    top: 35%;
+  .showcase-container-hidden .second-section-hidden > p {
+    /* margin-right: 0 !important; */
+    /* margin-left: 0 !important; */
+    margin: 0 !important;
   }
 
   footer {
@@ -1217,11 +1218,6 @@ footer section .contact-section p {
   .card-section {
     grid-template-columns: repeat(4, 1fr);
     padding: 50px 0 0;
-  }
-
-  .showcase-container-hidden .second-section-hidden {
-    top: 30%;
-    left: 22%;
   }
 
   .container .card-2-h1 {
@@ -1285,11 +1281,6 @@ footer section .contact-section p {
     content: " ";
   }
 
-  .showcase-container-hidden .second-section-hidden {
-    top: 22%;
-    left: 23%;
-  }
-
   .showcase-container-hidden .second-section-hidden h1 {
     font-size: 46px;
   }
@@ -1307,6 +1298,10 @@ footer section .contact-section p {
     font-size: 46px;
     font-weight: 400;
     margin-bottom: 20px;
+  }
+
+  .showcase-container-hidden .second-section-hidden > p {
+    margin: 15px 0 !important;
   }
 }
 
@@ -1348,11 +1343,6 @@ footer section .contact-section p {
     width: 64%;
   }
 
-  .showcase-container-hidden .second-section-hidden {
-    top: 33%;
-    left: 22%;
-    width: 49%;
-  }
   .showcase-container-hidden .second-section-hidden h1 {
     font-size: 46px;
   }
