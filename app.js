@@ -1,6 +1,6 @@
 // Global Variables
-chevronDown.classList.add("fa-chevron-up");
-chevronDown.classList.remove("fa-chevron-up");
+// chevronDown.classList.add("fa-chevron-up");
+// chevronDown.classList.remove("fa-chevron-up");
 
 // Nav-menu for Mobile & Small Tablet Screens
 function showNavigationMenu() {
