@@ -6,7 +6,7 @@ This is a sample webpage (replica) showcasing Microsoft's minimal and straight f
 
 - CSS
 - HTML
-- Javascript
+- Vanilla Javascript
 
 ## Versioning
 
