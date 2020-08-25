@@ -1,6 +1,6 @@
 # Technology Company Page
 
-This is a sample webpage (replica) showcasing Microsoft's minimal and straight forward design approach, giving users the experience of reliability, high quality services, and up-to-date products.
+This is a sample webpage (replica) showcasing Microsoft's simplicity and straight forward design approach, giving users the experience of reliability, high quality services, and up-to-date products.
 
 ## Built With:
 
